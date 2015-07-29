@@ -200,12 +200,6 @@ Public Class MP_CNC_Calc
         txt_XBadd.Text = "2"
         txt_YBadd.Text = "2"
     End Sub
-
-    Private Sub opt_Belt5_CheckedChanged(sender As Object, e As EventArgs) Handles opt_Belt5.CheckedChanged
-        txt_XBadd.Text = "5"
-        txt_YBadd.Text = "5"
-    End Sub
-
     Private Sub opt_Belt7_CheckedChanged(sender As Object, e As EventArgs) Handles opt_Belt7.CheckedChanged
         txt_XBadd.Text = "7"
         txt_YBadd.Text = "7"

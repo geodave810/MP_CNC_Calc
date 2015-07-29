@@ -28,7 +28,6 @@ Partial Class MP_CNC_Calc
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.grp_Belt = New System.Windows.Forms.GroupBox()
         Me.opt_Belt7 = New System.Windows.Forms.RadioButton()
-        Me.opt_Belt5 = New System.Windows.Forms.RadioButton()
         Me.opt_Belt2 = New System.Windows.Forms.RadioButton()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.grp_Edit = New System.Windows.Forms.GroupBox()
@@ -159,11 +158,10 @@ Partial Class MP_CNC_Calc
         'grp_Belt
         '
         Me.grp_Belt.Controls.Add(Me.opt_Belt7)
-        Me.grp_Belt.Controls.Add(Me.opt_Belt5)
         Me.grp_Belt.Controls.Add(Me.opt_Belt2)
         Me.grp_Belt.Location = New System.Drawing.Point(12, 351)
         Me.grp_Belt.Name = "grp_Belt"
-        Me.grp_Belt.Size = New System.Drawing.Size(187, 106)
+        Me.grp_Belt.Size = New System.Drawing.Size(616, 75)
         Me.grp_Belt.TabIndex = 47
         Me.grp_Belt.TabStop = False
         Me.grp_Belt.Text = "Belt Additions"
@@ -171,32 +169,23 @@ Partial Class MP_CNC_Calc
         'opt_Belt7
         '
         Me.opt_Belt7.AutoSize = True
-        Me.opt_Belt7.Location = New System.Drawing.Point(3, 68)
+        Me.opt_Belt7.Checked = True
+        Me.opt_Belt7.Location = New System.Drawing.Point(3, 44)
         Me.opt_Belt7.Name = "opt_Belt7"
-        Me.opt_Belt7.Size = New System.Drawing.Size(122, 17)
+        Me.opt_Belt7.Size = New System.Drawing.Size(490, 17)
         Me.opt_Belt7.TabIndex = 2
-        Me.opt_Belt7.Text = "Add 7"" for Each Belt"
+        Me.opt_Belt7.TabStop = True
+        Me.opt_Belt7.Text = "Add 7"" for Each Belt (You loose around 5"" at the motor, so this gives you an extr" & _
+    "a 1"" on each side)"
         Me.opt_Belt7.UseVisualStyleBackColor = True
-        '
-        'opt_Belt5
-        '
-        Me.opt_Belt5.AutoSize = True
-        Me.opt_Belt5.Location = New System.Drawing.Point(3, 45)
-        Me.opt_Belt5.Name = "opt_Belt5"
-        Me.opt_Belt5.Size = New System.Drawing.Size(122, 17)
-        Me.opt_Belt5.TabIndex = 1
-        Me.opt_Belt5.Text = "Add 5"" for Each Belt"
-        Me.opt_Belt5.UseVisualStyleBackColor = True
         '
         'opt_Belt2
         '
         Me.opt_Belt2.AutoSize = True
-        Me.opt_Belt2.Checked = True
         Me.opt_Belt2.Location = New System.Drawing.Point(3, 21)
         Me.opt_Belt2.Name = "opt_Belt2"
         Me.opt_Belt2.Size = New System.Drawing.Size(168, 17)
         Me.opt_Belt2.TabIndex = 0
-        Me.opt_Belt2.TabStop = True
         Me.opt_Belt2.Text = "Add 2"" (Probably Not Enough)"
         Me.opt_Belt2.UseVisualStyleBackColor = True
         '
@@ -299,7 +288,7 @@ Partial Class MP_CNC_Calc
         Me.txt_YBadd.Name = "txt_YBadd"
         Me.txt_YBadd.Size = New System.Drawing.Size(44, 20)
         Me.txt_YBadd.TabIndex = 7
-        Me.txt_YBadd.Text = "2"
+        Me.txt_YBadd.Text = "7"
         '
         'txt_XBadd
         '
@@ -307,7 +296,7 @@ Partial Class MP_CNC_Calc
         Me.txt_XBadd.Name = "txt_XBadd"
         Me.txt_XBadd.Size = New System.Drawing.Size(44, 20)
         Me.txt_XBadd.TabIndex = 6
-        Me.txt_XBadd.Text = "2"
+        Me.txt_XBadd.Text = "7"
         '
         'Label2
         '
@@ -1018,7 +1007,6 @@ Partial Class MP_CNC_Calc
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents grp_Belt As System.Windows.Forms.GroupBox
     Friend WithEvents opt_Belt7 As System.Windows.Forms.RadioButton
-    Friend WithEvents opt_Belt5 As System.Windows.Forms.RadioButton
     Friend WithEvents opt_Belt2 As System.Windows.Forms.RadioButton
 
 End Class
