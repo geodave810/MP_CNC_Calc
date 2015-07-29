@@ -9,3 +9,8 @@ I based these calculations from the <a href="http://public.vicious1.de/Assembly_
 I changed the belt length calculations to add 7" instead of 2", since I could not get 2" to work.  You loose about 5" of belt length at each motor.
 
 There is also a simple Visual tab showing what your layout should look like.
+
+Here are 2 screen captures from the program
+![alt tag](https://github.com/geodave810/MP_CNC_Calc/blob/master/Images/MP_CNC_CalcDefaults.JPG)
+This Machine Layout tab gives you a basic idea of what your workspace will look like relative to the machine.
+![alt tag](https://github.com/geodave810/MP_CNC_Calc/blob/master/Images/MP_CNC_CalcMachineLayout.JPG)
